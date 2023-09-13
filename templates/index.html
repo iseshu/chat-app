@@ -15,6 +15,7 @@
         var socket = io.connect(location);
         socket.on('connect', (data) => {
             socket.send("User Connected");
+            alert("cONNECTED");
         });
         socket.on("message", (data) => {
             console.log(data);
